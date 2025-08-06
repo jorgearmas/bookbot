@@ -1,3 +1,5 @@
+from stats import wordCounter
+
 def getBookText(file_path):
     book_contents = ""
 
@@ -5,10 +7,6 @@ def getBookText(file_path):
         book_contents = f.read()
 
     return book_contents
-
-def wordCounter(book_contents):
-    single_words = book_contents.split()
-    return len(single_words)
 
 
 def main():
